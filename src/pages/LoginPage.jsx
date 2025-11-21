@@ -17,7 +17,7 @@ const LoginPage = () => {
     return (
         <Container className="mt-5">
             <h1 className="text-center display-4">
-                <strong>Welcome Admin!</strong>
+                <strong>Welcome To Tixify!</strong>
             </h1>
             <p className="text-center lead">Untuk memastikan identitas, silakan isi form berikut:</p>
             <hr className="featurette-divider" />

@@ -6,7 +6,7 @@ import { FaEye, FaEyeSlash } from "react-icons/fa"; // Untuk ikon mata
 
 const FormLogin = () => {
     const navigate = useNavigate();
-    const [user, setUser] = useState({ username: "", password: "" });
+    const [user, setUser] = useState({ email: "", password: "" });
     const [showPassword, setShowPassword] = useState(false); // State untuk toggle password visibility
 
     const handleChange = (e) => {
@@ -17,11 +17,11 @@ const FormLogin = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
 
-        if (user.username === "" || user.password === "") {
-            toast.error("Username dan Password Tidak Boleh Kosong!");
+        if (user.email === "" || user.password === "") {
+            toast.error("Email dan Password Tidak Boleh Kosong!");
             return;
-        } else if (user.password.length !== 5 || user.username !== "wildan" || user.password !== "12338") {
-            toast.error("Username dan Password harus 5 digit dan sama dengan NPM!");
+        } else if (user.password.length !== 5 || user.email !== "beatrix@gmail.com" || user.password !== "12665") {
+            toast.error("Email dan Password harus 5 digit dan sama dengan NPM!");
             return;
         } else {
             const newUser = {
@@ -43,13 +43,13 @@ const FormLogin = () => {
     return (
         <form onSubmit={handleSubmit} style={{ maxWidth: "700px", margin: "auto" }}>
             <Alert variant="info">
-                <strong>Info!</strong> Username harus dengan nama depan dan password harus 5 digit NPM
+                <strong>Info!</strong> Email harus valid dan password harus 5 digit NPM
             </Alert>
-            <FloatingLabel controlId="floatingInput" label="Username" className="mb-3">
+            <FloatingLabel controlId="floatingInput" label="Email" className="mb-3">
                 <Form.Control
                     type="text"
                     placeholder="name@example.com"
-                    name="username"
+                    name="Email"
                     onChange={handleChange}
                 />
             </FloatingLabel>
