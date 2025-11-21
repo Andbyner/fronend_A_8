@@ -20,7 +20,7 @@ const FormLogin = () => {
         if (user.username === "" || user.password === "") {
             toast.error("Username dan Password Tidak Boleh Kosong!");
             return;
-        } else if (user.password.length !== 5 || user.username !== "Nama" || user.password !== "NPM") {
+        } else if (user.password.length !== 5 || user.username !== "wildan" || user.password !== "12338") {
             toast.error("Username dan Password harus 5 digit dan sama dengan NPM!");
             return;
         } else {

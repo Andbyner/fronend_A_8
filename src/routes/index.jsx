@@ -5,6 +5,7 @@ import HomePage from "../pages/HomePage";
 import LoginPage from "../pages/LoginPage";
 import DashboardPage from "../pages/DashboardPage";
 import RegisterPage from "../pages/RegisterPage";
+import FilmPage from "../pages/FilmPage";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "react-toastify/dist/ReactToastify.css";
 
@@ -30,8 +31,8 @@ const router = createBrowserRouter([
             element: <RegisterPage />,
         },
         {
-            path: "/dashboard",
-            element: <DashboardPage />,
+            path: "/film",
+            element: <FilmPage />,
         },
         ],
     },

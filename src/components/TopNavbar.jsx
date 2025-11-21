@@ -41,8 +41,7 @@ const TopNavbar = ({ routes }) => {
                             className="d-inline-block align-top"
                         />
                         <div className="ms-2">
-                            <h6 className="mb-fs-5 fw-bold">Atma Kitchen</h6>
-                            <h6 className="small mb-8">Taste Better</h6>
+                            <h3 className="mb-fs-5 fw-bold">TIXIFY</h3>
                         </div>
                     </div>
                 </Navbar.Brand>
